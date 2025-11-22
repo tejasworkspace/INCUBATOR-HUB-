@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SDGs Used</title>
+
+<style>
+/* Page Body */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #e6eef5, #ffffff);
+    color: #2c3e50;
+    animation: fadeUp 1s ease forwards;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #2c3e50, #3d5a80);
+    padding: 35px 20px;
+    text-align: center;
+    color: white;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    animation: slideDown 1.2s ease-in-out;
+}
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+header p {
+    margin-top: 8px;
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: #34495e;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 0 0 15px 15px;
+    animation: fadeDown 1s ease forwards;
+}
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+nav a:hover {
+    color: #ff7e67;
+    transform: scale(1.1);
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.2rem;
+    text-align: center;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    color: #3d5a80;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 35px;
+    animation: zoomIn 1s ease forwards;
+}
+
+/* SDG Cards */
+.sdg-card {
+    background: rgba(255,255,255,0.85);
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    animation: fadeUp 1s ease forwards;
+}
+.sdg-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.sdg-card h3 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: #2c3e50;
+}
+.sdg-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    border-radius: 20px 20px 0 0;
+    font-size: 1rem;
+    animation: slideUp 1.3s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.85); }
+    to { opacity: 1; transform: scale(1); }
+}
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>StartupSphere – SDGs</h1>
+  <p>Empowering Startups and Innovation</p>
+</header>
+
+<nav>
+  <a href="Home page.html">Home</a>
+  <a href="Program.html">Programs</a>
+  <a href="Success Stories.html">Success Stories</a>
+  <a href="Resources.html">Resources</a>
+  <a href="SDG.html">SDG</a>
+  <a href="Contactus.html">Contact & Registration</a>
+</nav>
+
+<div class="container">
+
+    <h2 class="section-title">Sustainable Development Goals Supported by Our Incubator Hub</h2>
+
+    <div class="sdg-card">
+        <h3>SDG 4 — Quality Education</h3>
+        <p>
+            The incubator empowers students with entrepreneurship education, skill-building programs, workshops,
+            and real-world business exposure. It ensures inclusive learning opportunities for all aspiring innovators.
+        </p>
+    </div>
+
+    <div class="sdg-card">
+        <h3>SDG 8 — Decent Work and Economic Growth</h3>
+        <p>
+            By promoting startups and innovation, the hub generates new job opportunities, boosts self-employment,
+            and encourages sustainable economic growth driven by youth-led enterprises.
+        </p>
+    </div>
+
+    <div class="sdg-card">
+        <h3>SDG 9 — Industry, Innovation and Infrastructure</h3>
+        <p>
+            The incubator fosters innovation, supports prototypes, encourages digital solutions, and contributes
+            to building strong startup ecosystems with technological advancement.
+        </p>
+    </div>
+
+    <div class="sdg-card">
+        <h3>SDG 17 — Partnerships for the Goals</h3>
+        <p>
+            The hub collaborates with industry mentors, academic institutions, and external organizations to build
+            strong networks that help students scale their innovative ideas.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+  &copy; Incubator Hub. All rights reserved.
+</footer>
+
+</body>
+</html>

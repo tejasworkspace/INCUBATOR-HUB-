@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Resources</title>
+
+<style>
+/* Page Body */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #e6eef5, #ffffff);
+    color: #2c3e50;
+    animation: fadeUp 1s ease forwards;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #2c3e50, #3d5a80);
+    padding: 35px 20px;
+    text-align: center;
+    color: white;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    animation: slideDown 1.2s ease-in-out;
+}
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+header p {
+    margin-top: 8px;
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: #34495e;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 0 0 15px 15px;
+    animation: fadeDown 1s ease forwards;
+}
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+nav a:hover {
+    color: #ff7e67;
+    transform: scale(1.1);
+}
+
+/* Resource Section */
+.container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 12px;
+    color: #3d5a80;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 35px;
+    animation: zoomIn 1s ease forwards;
+}
+
+.resource-card {
+    background: rgba(255,255,255,0.85);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.5);
+    transition: 0.3s;
+    animation: fadeUp 1s ease forwards;
+}
+.resource-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.resource-card h3 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.resource-card p, a {
+    color: #555;
+    line-height: 1.6;
+    text-decoration: none;
+}
+.resource-card a:hover {
+    color: #ff7e67;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 60px;
+    border-radius: 20px 20px 0 0;
+    font-size: 1rem;
+    animation: slideUp 1.3s ease-in-out;
+}
+
+/* ---------------- Animations ---------------- */
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.85); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>StartupSphere</h1>
+  <p>Your gateway to startup learning & success</p>
+</header>
+
+<nav>
+  <a href="Home page.html">Home</a>
+  <a href="Program.html">Programs</a>
+  <a href="Success Stories.html">Success Stories</a>
+  <a href="Resources.html">Resources</a>
+  <a href="SDG.html">SDG</a>
+  <a href="Contactus.html">Contact & Registration</a>
+</nav>
+
+<div class="container">
+
+    <h2 class="section-title">Startup Resources & Learning Materials</h2>
+
+    <!-- Startup Guides -->
+    <div class="resource-card">
+        <h3>Startup Guides & Toolkits</h3>
+        <p>Access helpful documents designed to guide you through ideation, research, validation, and launching your startup.</p>
+
+        <a href="https://www.niti.gov.in/sites/default/files/2021-09/Startup%20Handbook.pdf" target="_blank">📘 Startup India Handbook (PDF)</a><br>
+        <a href="https://yp.sg/pdfs/lean-canvas.pdf" target="_blank">📄 Lean Canvas Guide (PDF)</a><br>
+        <a href="https://www.strategyzer.com/canvas/business-model-canvas" target="_blank">📊 Business Model Canvas (Free Download)</a>
+    </div>
+
+    <!-- Templates -->
+    <div class="resource-card">
+        <h3>Business Templates</h3>
+        <p>Use ready-made business model templates, pitch decks, and financial planners.</p>
+
+        <a href="https://www.slideteam.net/media/pitch-decks" target="_blank">📑 Pitch Deck Templates</a><br>
+        <a href="https://www.template.net/editable/business-plan" target="_blank">📄 Business Plan Templates</a><br>
+        <a href="https://www.vertex42.com/ExcelTemplates/business-budget.html" target="_blank">📊 Business Budget Excel Template</a>
+    </div>
+
+    <!-- Learning Resources -->
+    <div class="resource-card">
+        <h3>Learning Materials</h3>
+        <p>Explore educational videos, startup courses, and entrepreneurship lectures.</p>
+
+        <a href="https://youtube.com/playlist?list=PLu4cZB5m1_QP5Zk90un0nLBKBPXn1HULS" target="_blank">🎥 Startup India Learning Program (YouTube Playlist)</a><br>
+        <a href="https://youtu.be/1Uo1d3muEnE" target="_blank">📚 Entrepreneurship Basics Explained</a><br>
+        <a href="https://ocw.mit.edu/courses/15-390-new-enterprises-spring-2013/" target="_blank">🎓 MIT Entrepreneurship Course (Free)</a>
+    </div>
+
+    <!-- Tools -->
+    <div class="resource-card">
+        <h3>Tools for Startup Building</h3>
+        <p>Improve startup productivity using free tools for design, management, and branding.</p>
+
+        <a href="https://www.canva.com" target="_blank">🎨 Canva – Logo & Design Maker</a><br>
+        <a href="https://trello.com" target="_blank">🗂 Trello – Project Management</a><br>
+        <a href="https://www.figma.com" target="_blank">🖥 Figma – UI/UX Designing Tool</a><br>
+        <a href="https://notion.so" target="_blank">📓 Notion – Notes & Workflow Tool</a>
+    </div>
+
+    <!-- Mentorship -->
+    <div class="resource-card">
+        <h3>Mentorship & Support</h3>
+        <p>Explore incubators, workshops, and mentor networks to grow your business faster.</p>
+
+        <a href="https://www.startupindia.gov.in/" target="_blank">🚀 Startup India Portal</a><br>
+        <a href="https://www.msins.in/" target="_blank">🌟 Maharashtra Startup Incubation Network</a><br>
+        <a href="https://www.linkedin.com/learning/topics/entrepreneurship" target="_blank">🔗 LinkedIn Learning – Entrepreneurship Courses</a>
+    </div>
+
+    <!-- Podcasts -->
+    <div class="resource-card">
+        <h3>Podcasts & Motivation</h3>
+        <p>Listen to founders and leaders discuss growth, innovation, and startup journeys.</p>
+
+        <a href="https://open.spotify.com/show/7GvL5QkNo4fU6Y4ZCkxzgv" target="_blank">🎧 The Indian Startup Show (Spotify)</a><br>
+        <a href="https://open.spotify.com/show/1GQo0dxxMjZz8gkPnwLxst" target="_blank">🎤 Masters of Scale (Reid Hoffman)</a><br>
+        <a href="https://open.spotify.com/show/0QYqf9hJkqVhXUfxKBxVxI" target="_blank">🎙 How I Built This – Startup Stories</a>
+    </div>
+
+</div>
+
+<footer>
+  &copy; Incubator Hub. All rights reserved
+</footer>
+
+</body>
+</html>

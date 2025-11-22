@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Success Stories</title>
+
+<style>
+/* ====================== BODY ANIMATION ====================== */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #e6eef5, #ffffff);
+    color: #2c3e50;
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ====================== HEADER + FOOTER ANIMATION ====================== */
+header, footer {
+    animation: slideDown 1.2s ease forwards;
+    opacity: 0;
+}
+@keyframes slideDown {
+    from { transform: translateY(-40px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* ====================== HEADER ====================== */
+header {
+    background: linear-gradient(135deg, #2c3e50, #3d5a80);
+    padding: 35px 20px;
+    text-align: center;
+    color: white;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+header p {
+    margin-top: 8px;
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* ====================== NAV ====================== */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: #34495e;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    border-radius: 0 0 15px 15px;
+}
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+nav a:hover {
+    color: #ff7e67;
+    transform: scale(1.1);
+}
+
+/* ====================== CAROUSEL ====================== */
+.carousel-container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    position: relative;
+    animation: fadeUp 1s ease forwards;
+}
+
+.carousel-slide {
+    display: flex;
+    width: 100%;
+    transition: transform 0.8s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    100% { transform: translateX(0); }
+}
+
+/* ====================== SUCCESS STORY CARDS ====================== */
+ab { margin: 10px 0 20px; }
+
+.add {
+    display: flex;
+    justify-content: center;
+}
+.sub {
+    background: #f6f8fa;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.1);
+}
+
+/* ====================== LOGO SLIDER ====================== */
+.logo-strip {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.logo-track {
+    display: flex;
+    gap: 60px;
+    padding: 20px 0;
+    animation: moveLogos 18s linear infinite;
+}
+
+.logo-track img {
+    height: 70px;
+    width: auto;
+    filter: grayscale(20%);
+    transition: 0.3s;
+}
+.logo-track img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.08);
+}
+
+@keyframes moveLogos {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+/* ====================== FOOTER ====================== */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    border-radius: 20px 20px 0 0;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>StartupSphere</h1>
+  <p>Empowering Startups and Innovation</p>
+</header>
+
+<nav>
+  <a href="Home page.html">Home</a>
+  <a href="Program.html">Programs</a>
+  <a href="Success Stories.html">Success Stories</a>
+  <a href="Resources.html">Resources</a>
+  <a href="SDG.html">SDG</a>
+  <a href="Contactus.html">Contact & Registration</a>
+</nav>
+
+<!-- ====================== CAROUSEL SECTION ====================== -->
+<div class="carousel-container" id="carousel">
+    <div class="carousel-slide" id="carouselSlide">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" />
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" />
+        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" />
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978" />
+    </div>
+</div>
+<h style="text-align: center; font-size: 125px; color: #333;">Our Success Stories</h><br><br>
+
+<!-- SUCCESS STORIES (your original content, untouched) -->
+<section class="ab"><div class="add"><div class="sub">
+<h2>Medify Health</h2>
+<ul>
+  <li>Created a low-cost telemedicine kit for rural clinics.</li>
+  <li>Received <b>Rs. 1.2Cr seed funding</b> from healthcare.</li>
+  <li>Expanded services to <b>5 Indian States</b></li>
+</ul>
+</div></div></section>
+
+<section class="ab"><div class="add"><div class="sub">
+<h2>AgroNext Farms</h2>
+<ul>
+  <li>Developed AI-powered crop monitoring sensors.</li>
+  <li>Partnered with 200+ farmers within a year.</li>
+  <li>Reduced crop wastage by 32% after incubation.</li>
+</ul>
+</div></div></section>
+
+<section class="ab"><div class="add"><div class="sub">
+<h2>EcoBuild Materials</h2>
+<ul>
+  <li>Created biodegradable construction bricks.</li>
+  <li>Reduced carbon footprint by <b>40%</b> in test projects.</li>
+  <li>Received a government collaboration offer</li>
+</ul>
+</div></div></section>
+
+<section class="ab"><div class="add"><div class="sub">
+<h2>FinGenius Solutions</h2>
+<ul>
+  <li>Launched a micro-investment app for students.</li>
+  <li>Achieved <b>1 lakh downloads</b> within 4 months.</li>
+  <li>Onboarded by a major fintech accelerator.</li>
+</ul>
+</div></div></section>
+
+<section class="ab"><div class="add"><div class="sub">
+<h2>SmartFleet Mobility</h2>
+<ul>
+  <li>Designed an IoT-based fleet tracking system.</li>
+  <li>Helped logistics companies reduce fuel cost by <b>18%</b>.</li>
+  <li>Secured <b>Rs.95 lakh</b> in pre-seed funding.</li>
+</ul>
+</div></div></section>
+
+<!-- ====================== LOGO SLIDER ====================== -->
+<div class="logo-strip">
+    <div class="logo-track">
+        <img src="C:\Users\KARAN LAD\Downloads\medify.jpg">
+        <img src="C:\Users\KARAN LAD\Downloads\agronext_logo.jpg">
+        <img src="C:\Users\KARAN LAD\Downloads\ecobuild.jpg">
+        <img src="C:\Users\KARAN LAD\Downloads\fingenius.jpg">
+        <img src="C:\Users\KARAN LAD\Downloads\smartfleet.png">
+
+        <!-- repeated for infinite scroll -->
+        <img src="C:\Users\KARAN LAD\Downloads\medify.jpg">
+        <img src="C:\Users\KARAN LAD\Downloads\agronext_logo.jpg">
+        <img src="C:\Users\KARAN LAD\Downloads\ecobuild.jpg">
+        <img src="C:\Users\KARAN LAD\Downloads\fingenius.jpg">
+        <img src="C:\Users\KARAN LAD\Downloads\smartfleet.png">
+
+        <img src="C:\Users\KARAN LAD\Downloads\medify.jpg">
+        <img src="C:\Users\KARAN LAD\Downloads\agronext_logo.jpg">
+        <img src="C:\Users\KARAN LAD\Downloads\ecobuild.jpg">
+        <img src="C:\Users\KARAN LAD\Downloads\fingenius.jpg">
+        <img src="C:\Users\KARAN LAD\Downloads\smartfleet.png">
+
+        <img src="C:\Users\KARAN LAD\Downloads\medify.jpg">
+        <img src="C:\Users\KARAN LAD\Downloads\agronext_logo.jpg">
+        <img src="C:\Users\KARAN LAD\Downloads\ecobuild.jpg">
+        <img src="C:\Users\KARAN LAD\Downloads\fingenius.jpg">
+        <img src="C:\Users\KARAN LAD\Downloads\smartfleet.png">
+    </div>
+</div>
+
+<footer>
+  © Incubator Hub. All rights reserved
+</footer>
+
+</body>
+</html>

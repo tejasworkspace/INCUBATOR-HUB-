@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact</title>
+
+<style>
+/* ===== GLOBAL STYLING ===== */
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #e6eef5, #ffffff);
+    color: #2c3e50;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(135deg, #2c3e50, #3d5a80);
+    padding: 35px 20px;
+    text-align: center;
+    color: white;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    animation: slideDown 1.2s ease-in-out;
+}
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+header p {
+    margin-top: 8px;
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: #34495e;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-radius: 0 0 15px 15px;
+}
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+nav a:hover {
+    color: #ff7e67;
+    transform: scale(1.1);
+}
+
+/* ===== FORM ===== */
+form {
+    max-width: 450px;
+    margin: 0 auto;
+}
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    font-family: inherit;
+}
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+button[type="submit"] {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+button[type="submit"]:hover {
+    background: #c0392b;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    border-radius: 20px 20px 0 0;
+    font-size: 1rem;
+    animation: slideUp 1.3s ease-in-out;
+}
+
+p {
+    text-align: center;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>StartupSphere</h1>
+  <p>Empowering Startups and Innovation</p>
+</header>
+
+<nav>
+  <a href="Home page.html">Home</a>
+  <a href="Program.html">Programs</a>
+  <a href="Success Stories.html">Success Stories</a>
+  <a href="Resources.html">Resources</a>
+  <a href="SDG.html">SDG</a>
+  <a href="Contactus.html">Contact and Registeration</a>
+</nav><br>
+
+<h2 style="text-align: center;">Register here</h2>
+
+<form>
+  <label for="name">Name</label>
+  <input id="name" type="text" required /><br>
+
+  <label for="email">Email</label>
+  <input id="email" type="email" required /><br>
+
+  <label for="mobno">Mobile no.</label>
+  <input id="mobno" type="number" required /><br>
+
+  <label for="message">Business Idea</label>
+  <textarea id="message"></textarea><br>
+
+  <button type="submit" onclick="alert('Registered successfully')">Register</button>
+</form>
+
+<br><br>
+
+<h3 style="text-align: center;">Contact</h3>
+<p>Mob no:- 8895462376/9751264389</p>
+<p>Add:- 47 Innovation Street, Tech Park Road, Pune, Maharashtra – 411038</p>
+
+<footer>
+  &copy; Incubator Hub. All rights reserved
+</footer>
+
+</body>
+</html>
